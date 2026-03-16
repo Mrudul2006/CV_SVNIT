@@ -13,7 +13,7 @@ from models.model_convnext import fusion_net
 from cal_parameters import count_parameters
 
 parser = argparse.ArgumentParser(description='Shadow Removal Inference')
-parser.add_argument('--test_dir',   type=str, default='')
+parser.add_argument('--test_dir',     type=str, default='')
 parser.add_argument('--output_dir', type=str, default='')
 parser.add_argument('--model_path', type=str, default='')
 parser.add_argument('--batch_size', type=int,  default=1)
@@ -64,6 +64,9 @@ with torch.no_grad():
     for inp, name in tqdm(test_loader, desc="🌙 Shadow removal", unit="img"):
         inp = inp.to(device)
 
+        # GPU sync before starting timer
+        if torch.cuda.is_available():
+            torch.cuda.synchronize()
         t0 = time.perf_counter()
 
         # Note: autocast disabled — FFC layers require fp32 (cuFFT fp16 only supports power-of-2 sizes)
@@ -75,6 +78,10 @@ with torch.no_grad():
             out = (out + out_flip) / 2.0
 
         out = out.clamp(0, 1)
+
+        # GPU sync before stopping timer
+        if torch.cuda.is_available():
+            torch.cuda.synchronize()
         total_time += time.perf_counter() - t0
 
         # Parse image number from name and save
