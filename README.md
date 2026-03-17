@@ -53,6 +53,6 @@ Dependencies: Ensure you have Python 3.8+ installed along with `torch`, `torchvi
 
 gdown Tool: You can install `gdown` via pip using `pip install gdown`.
 
-Alternative Download: Alternative Download: If the command line download fails or you prefer using a browser, manually download the weights from [this Google Drive link](https://drive.google.com/file/d/17N36tVUtVKv3NRlNmodBu9yu5kQtI0-g/view?usp=sharing). Extract the downloaded weights.zip file into the weights directory.
+Alternative Download: If the command line download fails or you prefer using a browser, manually download the `weights` from [this Google Drive link](https://drive.google.com/file/d/17N36tVUtVKv3NRlNmodBu9yu5kQtI0-g/view?usp=sharing). Extract the downloaded weights.zip file into the `weights` directory.
 ### Support
 Following these steps will ensure all necessary files are set up correctly. If you encounter any issues or require further assistance, please feel free to reach out to the team!
