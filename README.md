@@ -60,21 +60,21 @@ Alternative Download: If the command line download fails or you prefer using a b
 Following these steps will ensure all necessary files are set up correctly. If you encounter any issues or require further assistance, please feel free to reach out to the team!
 
 ### References and Citations
-Our proposed architecture, Efficient Image Shadow Removal utilizing a Dual-Branch ConvNeXt and DWT-FFC Fusion Network, builds upon and adapts components from the following state-of-the-art methods:
+Our model, Efficient Image Shadow Removal utilizing a Dual-Branch ConvNeXt and DWT-FFC Fusion Network, builds upon and adapts components from the following state-of-the-art methods:
 
-1. ShadowRefiner (Reference Architecture)
-We adopt the block designs and frequency-domain learning concepts proposed in ShadowRefiner, the winner of the NTIRE 2024 Shadow Removal Challenge.
+ShadowRefiner (Reference Architecture): We adopt the block designs and frequency-domain learning concepts proposed in ShadowRefiner, the winner of the NTIRE 2024 Shadow Removal Challenge.
 
-Official Repository: \url{https://github.com/movingforward100/Shadow_R}
+Official Repository: movingforward100/Shadow_R
 
-2. FusionShadowRemoval (Base Model)
-Our dual-branch implementation utilizes pre-trained weights and architectural elements from the FusionShadowRemoval framework.
+FusionShadowRemoval (Base Model): Our dual-branch implementation utilizes pre-trained weights and architectural elements from the FusionShadowRemoval framework.
 
-Repository: \url{https://github.com/Yuyok/FusionShadowRemoval-main}
+Repository: Yuyok/FusionShadowRemoval-main
+
+
 
 Citation
 If you find our work or the modified dual-branch architecture useful, please cite our team's submission and the foundational ShadowRefiner paper:
-
+```bash
 @InProceedings{NTIRE2026_ShadowRemoval_CV_SVNIT,
     author    = {Trivedi, Daksh and Singh, Divyavardhan and Mohammad, Hammad and Mittal, Mrudul and Upla, Kishor and Raja, Kiran},
     title     = {Efficient Image Shadow Removal utilizing a Dual-Branch ConvNeXt and DWT-FFC Fusion Network},
