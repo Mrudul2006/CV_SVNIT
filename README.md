@@ -36,7 +36,8 @@ unzip weights.zip -d weights
 ```
 ## 3. Running the Model
 
-After setting up the repository and extracting the weights, place your input images in the `test_images` folder and run the testing script:
+After setting up the repository and extracting the weights, place your input images in the `test_images` folder and inside  `LQ_padding` and run the testing script.
+Even though the images are inside `LQ_padding`, you must provide the path to the parent folder `test_images`  in the command:
 
 ```bash
 # Linux / Mac
