@@ -58,3 +58,32 @@ gdown Tool: You can install `gdown` via pip using `pip install gdown`.
 Alternative Download: If the command line download fails or you prefer using a browser, manually download the `weights` from [this Google Drive link](https://drive.google.com/file/d/17N36tVUtVKv3NRlNmodBu9yu5kQtI0-g/view?usp=sharing). Extract the downloaded weights.zip file into the `weights` directory.
 ### Support
 Following these steps will ensure all necessary files are set up correctly. If you encounter any issues or require further assistance, please feel free to reach out to the team!
+
+### References and Citations
+Our proposed architecture, Efficient Image Shadow Removal utilizing a Dual-Branch ConvNeXt and DWT-FFC Fusion Network, builds upon and adapts components from the following state-of-the-art methods:
+
+1. ShadowRefiner (Reference Architecture)
+We adopt the block designs and frequency-domain learning concepts proposed in ShadowRefiner, the winner of the NTIRE 2024 Shadow Removal Challenge.
+
+Official Repository: \url{https://github.com/movingforward100/Shadow_R}
+
+2. FusionShadowRemoval (Base Model)
+Our dual-branch implementation utilizes pre-trained weights and architectural elements from the FusionShadowRemoval framework.
+
+Repository: \url{https://github.com/Yuyok/FusionShadowRemoval-main}
+
+Citation
+If you find our work or the modified dual-branch architecture useful, please cite our team's submission and the foundational ShadowRefiner paper:
+@InProceedings{NTIRE2026_ShadowRemoval_CV_SVNIT,
+    author    = {Trivedi, Daksh and Singh, Divyavardhan and Mohammad, Hammad and Mittal, Mrudul and Upla, Kishor and Raja, Kiran},
+    title     = {Efficient Image Shadow Removal utilizing a Dual-Branch ConvNeXt and DWT-FFC Fusion Network},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+    year      = {2026}
+}
+
+@InProceedings{shadowrefiner_2024_cvprw,
+    author    = {Dong, Wei and Zhou, Han and Tian, Yuqiong and Sun, Jingke and Liu, Xiaohong and Zhai, Guangtao and Chen, Jun},
+    title     = {ShadowRefiner: Towards Mask-free Shadow Removal via Fast Fourier Transformer},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+    year      = {2024}
+}
