@@ -74,14 +74,6 @@ Repository: https://github.com/Yuyok/FusionShadowRemoval-main
 If you find our work or the modified dual-branch architecture useful, please cite our team's submission and the foundational ShadowRefiner paper:
 
 ```bash
-
-@InProceedings{NTIRE2026_ShadowRemoval_CV_SVNIT,
-    author    = {Trivedi, Daksh and Singh, Divyavardhan and Mohammad, Hammad and Mittal, Mrudul and Upla, Kishor and Raja, Kiran},
-    title     = {Efficient Image Shadow Removal utilizing a Dual-Branch ConvNeXt and DWT-FFC Fusion Network},
-    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
-    year      = {2026}
-}
-
 @InProceedings{shadowrefiner_2024_cvprw,
     author    = {Dong, Wei and Zhou, Han and Tian, Yuqiong and Sun, Jingke and Liu, Xiaohong and Zhai, Guangtao and Chen, Jun},
     title     = {ShadowRefiner: Towards Mask-free Shadow Removal via Fast Fourier Transformer},
