@@ -64,17 +64,17 @@ Our model, Efficient Image Shadow Removal utilizing a Dual-Branch ConvNeXt and D
 
 ShadowRefiner (Reference Architecture): We adopt the block designs and frequency-domain learning concepts proposed in ShadowRefiner, the winner of the NTIRE 2024 Shadow Removal Challenge.
 
-Official Repository: movingforward100/Shadow_R
+Official Repository: https://github.com/movingforward100/Shadow_R
 
 FusionShadowRemoval (Base Model): Our dual-branch implementation utilizes pre-trained weights and architectural elements from the FusionShadowRemoval framework.
 
-Repository: Yuyok/FusionShadowRemoval-main
-
-
+Repository: https://github.com/Yuyok/FusionShadowRemoval-main
 
 Citation
 If you find our work or the modified dual-branch architecture useful, please cite our team's submission and the foundational ShadowRefiner paper:
+
 ```bash
+
 @InProceedings{NTIRE2026_ShadowRemoval_CV_SVNIT,
     author    = {Trivedi, Daksh and Singh, Divyavardhan and Mohammad, Hammad and Mittal, Mrudul and Upla, Kishor and Raja, Kiran},
     title     = {Efficient Image Shadow Removal utilizing a Dual-Branch ConvNeXt and DWT-FFC Fusion Network},
@@ -88,3 +88,4 @@ If you find our work or the modified dual-branch architecture useful, please cit
     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
     year      = {2024}
 }
+```
